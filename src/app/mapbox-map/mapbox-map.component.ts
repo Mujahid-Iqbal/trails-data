@@ -15,12 +15,12 @@ export class MapboxMapComponent implements OnInit {
   gpxData: any;
   FinalData: any
   coordinatesData: any;
+  domainName: any
   accessToken = 'pk.eyJ1IjoibXVqYWhpZC1pcWJhbCIsImEiOiJjbGtnaHc5NmgwMGliM2RtcXFoeGNkbHk0In0.XMNzzTI2nHCObuDa8qaNlQ';
   gpxFiles = ['assets/gpx-files/Stage-1-Route-1.gpx', 'assets/gpx-files/Stage-1-Route-2-FINAL-stiched-Pretzel.gpx'];
   
 
   constructor(private http: HttpClient, public router: Router) {
-   
    }
 
   ngOnInit(): void {
